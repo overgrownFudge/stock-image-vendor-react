@@ -2,7 +2,7 @@ import React, {useState, useContext} from "react"
 import {Context} from "../Context"
 import CartItem from "../components/CartItem"
 
-function Cart() {
+export default function Cart() {
     const [buttonText, setButtonText] = useState("Place Order")
     const {cartItems, emptyCart} = useContext(Context)
     const totalCost = 5.99 * cartItems.length
@@ -36,5 +36,3 @@ function Cart() {
         </main>
     )
 }
-
-export default Cart

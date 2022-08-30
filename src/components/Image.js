@@ -4,7 +4,7 @@ import PropTypes from "prop-types"
 import {Context} from "../Context"
 import useHover from "../hooks/useHover"
 
-function Image({className, img}) {
+export default function Image({className, img}) {
     const [hovered, ref] = useHover()
     const {toggleFavorite, addToCart, cartItems, removeFromCart} = useContext(Context)
     
@@ -45,5 +45,3 @@ Image.propTypes = {
         isFavorite: PropTypes.bool
     })
 }
-
-export default Image

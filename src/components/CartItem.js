@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 import {Context} from "../Context"
 import useHover from "../hooks/useHover"
 
-function CartItem({item}) {
+export default function CartItem({item}) {
     const [hovered, ref] = useHover()
     const {removeFromCart} = useContext(Context)
     
@@ -29,5 +29,3 @@ CartItem.propTypes = {
         url: PropTypes.string.isRequired
     })
 }
-
-export default CartItem

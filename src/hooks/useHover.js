@@ -1,6 +1,6 @@
 import {useState, useEffect, useRef} from "react"
 
-function useHover() {
+export default function useHover() {
     const [hovered, setHovered] = useState(false)
     const ref = useRef(null)
     
@@ -24,5 +24,3 @@ function useHover() {
     
     return [hovered, ref]
 }
-
-export default useHover

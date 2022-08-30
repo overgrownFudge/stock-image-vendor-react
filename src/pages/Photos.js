@@ -4,7 +4,7 @@ import Image from "../components/Image"
 import {Context} from "../Context"
 import {getClass} from "../utils"
 
-function Photos() {
+export default function Photos() {
     const {allPhotos} = useContext(Context)
     
     const imageElements = allPhotos.map((img, i) => (
@@ -17,5 +17,3 @@ function Photos() {
         </main>
     )
 }
-
-export default Photos
