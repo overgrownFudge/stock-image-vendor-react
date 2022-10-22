@@ -1,10 +1,10 @@
-import React, {useContext} from "react"
-import {Link} from "react-router-dom"
+import React, { useContext } from "react"
+import { Link } from "react-router-dom"
 
-import {Context} from "../Context"
+import { Context } from "../Context"
 
 export default function Header() {
-    const {cartItems} = useContext(Context)
+    const { cartItems } = useContext(Context)
     const cartClassName = cartItems.length > 0 ? "ri-shopping-cart-fill" : "ri-shopping-cart-line"
     return (
         <header>
